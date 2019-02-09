@@ -1,0 +1,673 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+
+}
+.ms-Dialog-main {
+    max-width: 600px !important;
+    max-height: 600px !important;
+
+    width: 600px;
+    height: 600px;
+ }
+#form-dialog-title{
+    width: 600px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1 !important;
+}
+.events{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    background: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.7s all;
+    display: flex;
+    flex-direction: column;
+}
+.events a{
+    transition: all .6s;
+}
+.events a:hover{
+    color: red;
+}
+.events:hover{
+    box-shadow: 0 -3px 20px rgba(0,0,0,0.2);
+    
+}
+.contents {
+    height: 100%;
+    width: 100%;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.first_bg {
+    background-color: #242424;
+    height: 100%;
+    flex: 1;
+}
+
+.second_bg {
+    background-color: #339AFD;
+    height: 100%;
+    flex: 1;
+}
+
+.main {
+    height: 100vh;
+    width: 95vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    left: 20px;
+}
+
+.text {
+    padding-top: 80px;
+}
+
+.heading {
+    margin: 0;
+    padding: 2px;;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Montserrat;
+    color: white;
+}
+.heading2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Montserrat;
+    color: white;
+}
+
+.title {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 150px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.images {
+    right: 20px;
+    position: relative;
+    top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images .player {
+    width: 50%;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+.ball {
+    width: 70px;
+    margin-top: 200px;
+    margin-left: 550px;
+    filter: blur(0.7px);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.inner {
+    position: absolute;
+    width: 100px;
+    left: 180px !important;
+    top: 280px !important;
+}
+
+.middle {
+    position: absolute;
+    width: 150px;
+    left: 145px !important;
+    top: 230px !important;
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation2 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-359deg);
+    }
+}
+
+.outer {
+    position: absolute;
+    width: 210px;
+    left: 120px !important;
+    top: 195px !important;
+    animation: rotation2 20s infinite linear;
+}
+
+.btn_cont {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 48%;
+    bottom: 80px;
+    overflow: hidden;
+    font-family: Montserrat,
+        sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    z-index: 2;
+    
+}
+
+.btn {
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: white;
+    
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    color: #000;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+}
+
+.btn:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+    box-shadow: 0 40px 10px rgba(0,0,0,0.2);
+}
+
+.mas {
+    
+    border-radius: 25px;
+    padding: 10px 15px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: black;
+}
+
+@keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+
+
+.top {
+    z-index: 999;
+}
+
+.refuse {
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 100px;
+    transform: rotate(-90deg);
+    color: gray;
+    opacity: 0.1;
+    left: -120px;
+    top: 200px;
+}
+
+@media (max-width: 1400px){
+    .refuse{
+        font-size: 70px;
+        left: -60px;
+    }
+}
+@media (max-width: 1200px){
+    .texts{
+        margin-top: 20% !important;
+    }
+    .about_para{
+        width: 400px !important;
+    }
+}
+@media (max-width: 968px){
+    .title{
+        font-size: 120px;
+    }
+    .inner{
+        width: 80px;
+        left: 140px !important;
+        top: 240px !important;
+    }
+    .middle{
+        width: 120px;
+        left: 120px !important;
+        top: 200px !important;
+    }
+    .outer{
+        width: 180px;
+        left: 100px !important;
+        top: 165px !important;
+    }
+    .ball{
+        width: 60px;
+    }
+    .texts{
+        margin-top: 20% !important;
+    }
+    .about_para{
+        width: 350px !important;
+    }
+}
+@media (max-width: 775px){
+    .contact_row{
+        margin-left: 0 !important;
+    }
+    .title{
+        font-size: 100px;
+    }
+    .inner{
+        width: 80px;
+        left: 90px !important;
+        top: 220px !important;
+    }
+    .middle{
+        width: 120px;
+        left: 80px !important;
+        top: 180px !important;
+    }
+    .outer{
+        width: 180px;
+        left: 50px !important;
+        top: 155px !important;
+    }
+    .ball{
+        width: 50px;
+        margin-left: 400px;
+    }
+    .contents{
+        margin-left: 0px;
+    }
+    .btn_cont{
+        left: 39%;
+    }
+    .text{
+        padding-left:0px;
+    }
+    .player{
+        width: 320px !important;
+    }
+    .texts{
+        margin-top: 40% !important;
+    }
+    .about_para{
+        width: 400px !important;
+    }
+    .aboutCont{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .about_title{
+        font-size: 30px !important;
+    }
+    .about_para{
+        font-size: 12px !important;
+        width: 300px !important;
+    }
+    .video{
+        top: 25% !important;
+        left: 50% !important;
+    }
+    .video iframe{
+        width: 300px !important;
+        height: 200px !important;
+    }
+    .texts{
+        margin-top: 35% !important;
+        margin-left: -10%;
+    }
+}
+@media (max-width: 568px){
+    .texts{
+        margin-top: 45% !important;
+        margin-left: -40%;
+    }
+    .title{
+        font-size: 60px;
+        padding: 10px 10px;
+    }
+    .images{
+        top: -150px;
+    }
+    .player{
+        width: 250px !important;
+    }
+    .ball{
+        width: 40px;
+        margin-left: 280px;
+        margin-top: 170px;
+    }
+    .btn_cont{
+        left: 31%;
+    }
+    .logo{
+        left: 50px;
+    }
+    .inner{
+        width: 60px;
+        left: 40px !important;
+        top: 170px !important;
+    }
+    .middle{
+        width: 80px;
+        left: 30px !important;
+        top: 140px !important;
+    }
+    .outer{
+        width: 110px;
+        left: 20px !important;
+        top: 130px !important;
+    }
+    .refuse{
+        font-size: 60px;
+        left: -120px;
+    }
+    .one{
+        top: 60% !important;
+    }
+    .two{
+        top: 50% !important;
+    }
+    .imgCont2{
+        margin-left: 50% !important;
+    }
+    .imgCont{
+        display: none !important;
+    }
+    .college{
+        padding-left: 20px;
+    }
+    .container2{
+        width: 100vw !important;
+    }
+}
+
+.aboutCont{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #242424;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+.background2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+.video{
+    z-index: 2;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.video iframe{
+    width: 400px;
+    height: 250px;
+    border-width: 0px;
+    border: 2px solid #D3345E;
+}
+.imgCont{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+.imgCont2{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    z-index: 2;
+}
+.imgCont2 img{
+    position: absolute;
+    left: -200px;
+    z-index: 2;
+}
+.imgCont img{
+    max-height: 100%;
+    max-width: 150%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    left: -100px;
+    filter: blur(2px);
+}
+
+.texts{
+    width: 40%;
+    z-index: 22;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.about_title{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 70px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    color: white;
+    letter-spacing: 1px;
+}
+.about_para{
+    font-family: Poppins;
+    font-size: 15px;
+    width: 450px;
+    color: white;
+    padding-right: 100px;
+}
+.square_cont{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.square{
+    background: transparent;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    opacity: 0.8;
+    position: absolute;
+}
+
+.one{
+    width: 140px;
+    height: 140px;
+    top: 30%;
+    left: 25%;
+    border: 6px solid #E13852;
+}
+.two{
+    width: 100px;
+    height: 100px;
+    border: 6px solid #3CFEDB;
+    top: 15%;
+    left: 32%;
+}
+
+.graph{
+    overflow: hidden;
+}
+.contact_content{
+    display: flex;
+    justify-content: center;
+}
+.contact_row{
+    padding: 100px 0;
+    background: #242424;
+    width: 100%;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.contact_row h4,p, h2{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
+}
+.contact_title{
+    padding-bottom: 40px !important;
+}
+.person{
+    padding: 10px 0;
+}
+.email h4{
+    color: #EC4613;
+    padding-bottom: 20px;
+}
+.location{
+    color: #EC4613;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.container2{
+    width: 96vw;
+    margin-right: 40px;
+}
+.subtitle{
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

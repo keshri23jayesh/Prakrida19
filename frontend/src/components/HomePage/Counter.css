@@ -1,0 +1,28 @@
+.counter{
+    background-image: -moz-linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
+    background-image: -webkit-linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
+    background-image: -o-linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
+    background-image: -ms-linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
+    background-image: linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    font-size:3.9em;
+    opacity: 0.3;
+    font-family: Montserrat, sans-serif;
+    font-weight:900;
+    text-align: center;
+    top: 35%;
+}
+@media (max-width: 775px){
+    .counter{
+        font-size: 3em;
+        top: 20%;
+    }
+}
+@media (max-width: 568px){
+    .counter{
+        font-size: 2em;
+        top: 50%;
+    }
+}

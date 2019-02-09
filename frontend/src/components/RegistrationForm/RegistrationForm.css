@@ -1,0 +1,13 @@
+.submit{
+    padding: 5px 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    border: none;
+    color:white;
+    font-weight: bold;
+    background: #339AFD;
+}
+.form_field{
+    margin-bottom: 15px;
+}

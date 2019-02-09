@@ -1,0 +1,64 @@
+.indi_cont{
+    margin-left: 80px;
+    font-family: 'Montserrat';
+}
+.spon_cont{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.indi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.indi_card{
+    text-align: center;
+    background: white;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.indi_card img{
+    width: 250px;
+}
+
+.indi_card h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    padding-top: 10px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.spon_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.spon_card h1{
+    font-size: 0.7em;
+}
+
+.indi_card h4{
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    color: gray;
+}
+
+@media (max-width: 768px){
+    .indi_cont{
+        margin-left: 0;
+    }
+}

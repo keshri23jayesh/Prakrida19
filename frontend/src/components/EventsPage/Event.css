@@ -1,0 +1,195 @@
+.event_container{
+    background: #242424;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.event_container2{
+    background: #242424;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.canvas{
+    background: #242424;
+}
+.event_title{
+    position: fixed;
+    font-size: 100px;
+    font-family: 'Montserrat';
+    color: white;
+    opacity: 0.1;
+    left: 80px;
+    top: -100px;
+}
+.particles canvas{
+    position: fixed;
+}
+.row{
+    margin-left: 80px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.event{
+    position: relative;
+    padding-top: 100px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5 !important;
+}
+.back{
+    position: absolute;
+    height: 220px;
+    width: 140px;
+    z-index: 1;
+}
+.basketball{
+    background: #339AFD;
+}
+.tennis{
+    background: #F28411;
+}
+.volley{
+    background: #B6411E;
+}
+.badminton{
+    background: #77D172;
+}
+.football{
+    background: #1268AF;
+}
+.chess{
+    background: #8B5B4E;
+}
+.carrom{
+    background: #FAD8AF;
+}
+.table{
+    background: #AA4947;
+}
+.kabaddi{
+    background: #1268AF;
+}
+.esports{
+    background: #EBB080;
+}
+.chess_pl{
+    right: 140px !important;
+}
+.volley_pl{
+    height: 280px !important;
+    right: 100px !important;
+    top: 60px !important;
+}
+.badminton_pl{
+    height: 280px !important;
+    right: 140px !important;
+    top: 60px !important;
+}
+.table_pl{
+    height: 120px !important;
+    right: 120px !important;
+    top: 150px !important;
+}
+.football_pl{
+    height: 240px !important;
+    right: 100px !important;
+    top: 90px !important;
+}
+.pl{
+    position: absolute;
+    height: 210px;
+    z-index: 3 !important;
+    top: 110px;
+    right: 90px;
+}
+.event_name{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: white;
+    font-size: 32px;
+    top: 150px;
+    left: 100px;
+}
+.details{
+    position: absolute;
+    background: white;
+    z-index: 4;
+    font-family: 'Montserrat';
+    padding: 8px 20px;
+    font-weight: bolder;
+    top: 260px;
+    right: 100px;
+    transition: .7s all;
+    cursor: pointer;
+}
+.details:hover{
+    color: white;
+}
+.details a{
+    transition: .7s all;
+}
+.details a:hover{
+    color:white;
+}
+.details:hover::after{
+    height: 100%;
+}
+.details::after{
+    content: '';
+    width: 100%;
+    background: #E13852;
+    display: block;
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    transition: .7s all;
+    z-index: -1;
+}
+@media (max-width: 775px){
+    .event_title{
+        font-size: 40px;
+        top: 0px;
+    }
+    .event{
+        width: 50%;
+        margin-left: 25%;
+        height: 200px;
+    }
+    .row{
+        flex-direction: column;
+        height: auto;
+        margin-left: 0;
+    }
+    .event_name{
+        left: -50px;
+    }
+    .pl{
+        right: -20px;
+    }
+    .details{
+        right: 0;
+    }
+    .volley_pl{
+        right: -20px !important;
+    }
+    .badminton_pl{
+        right: 0px !important;
+    }
+    .football_pl{
+        right: -20px !important;
+    }
+    .chess_pl{
+        right: -20px !important;
+    }
+    
+}
